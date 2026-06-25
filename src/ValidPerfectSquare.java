@@ -1,7 +1,7 @@
 public class ValidPerfectSquare {
     public static void main(String[] args) {
         
-        System.out.println(Solution.isPerfectSquare(14));
+        System.out.println(Solution.isPerfectSquare(16));
     }
 }
 
