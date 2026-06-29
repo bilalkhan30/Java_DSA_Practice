@@ -1,17 +1,16 @@
 public class ValidPerfectSquare {
     public static void main(String[] args) {
         
-        System.out.println(Solution.isPerfectSquare(16));
+        System.out.println(isPerfectSquare(16));
     }
-}
 
-class Solution {
     public static boolean isPerfectSquare(int num) {
 
         if (num == 1) {
             return true;
         }
-        // For num > 1 we use binary search for finding the sqrt of the given number between 1 to num/2
+        // For num > 1 we use binary search for finding the sqrt of the given number
+        // between 1 to num/2
         int start = 1;
         int end = num / 2; // the square root of a number > 1 will always be less than number/2
         long mid = -1;
@@ -29,3 +28,4 @@ class Solution {
         return false;
     }
 }
+

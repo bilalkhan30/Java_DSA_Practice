@@ -1,11 +1,9 @@
 public class MissingKthElement {
     public static void main(String[] args) {
         
-        System.out.println(Solution.findKthPositive(new int[] {2, 3, 4, 7, 11}, 5));
+        System.out.println(findKthPositive(new int[] {2, 3, 4, 7, 11}, 5));
     }
-}
 
-class Solution {
     public static int findKthPositive(int[] arr, int k) {
 
         int start = 0;
@@ -21,3 +19,4 @@ class Solution {
         return start + k;
     }
 }
+
